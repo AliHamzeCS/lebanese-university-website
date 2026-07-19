@@ -1,0 +1,341 @@
+body {
+    background-image: linear-gradient(135deg, #0A192F 0%, #112240 100%);
+}
+
+header {
+    background-image: linear-gradient(135deg, #0A192F 0%, #112240 100%);
+    height: 80px;
+    z-index: 100;
+    opacity: 0.989;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: 'Outfit', sans-serif;
+    position: sticky;
+    top: 0;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    margin-right: 17px;
+    margin-left: 17px;
+    margin-bottom: 10px;
+    top: -3px;
+    right: 170px;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: 'Outfit', sans-serif;
+}
+
+header h2,
+img {
+    color: #E6B65C;
+    text-shadow: 0 2px 8px rgba(230, 182, 92, 0.25);
+    font-weight: 700;
+    position: relative;
+    left: -875px;
+    top: -4px;
+}
+
+.applay {
+    color: #E6B65C;
+}
+
+a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1.5px;
+    left: 0;
+    bottom: -5px;
+    background-color: #E6B65C;
+    transition: width 0.3s ease-in-out;
+}
+
+a:hover::after {
+    width: 100%;
+}
+
+div {
+    animation-name: main;
+    animation-duration: 1.5s;
+}
+
+div .main {
+    color: #F2D28B;
+    font-size: 50px;
+    font-weight: 550;
+    text-align: center;
+}
+
+div .main1 {
+    color: white;
+    font-family: 'Outfit', sans-serif;
+    opacity: 0.55;
+    text-align: center;
+    font-size: 16px;
+    position: relative;
+    top: -20px;
+}
+
+@keyframes main {
+    0% {
+        opacity: 0;
+        position: relative;
+        top: 20px;
+    }
+
+    100% {
+        opacity: 1;
+        position: relative;
+        top: 0;
+    }
+}
+
+section {
+    background-color: #1c2d46b7;
+    width: 800px;
+    height: 930px;
+    border-radius: 20px;
+    margin: 0 auto;
+    border: 1px solid #2F405F;
+    box-shadow: 1px 1px 10px 10px #0A192F;
+    animation-name: main1;
+    animation-duration: 1.5s;
+}
+
+section .Information,
+.History,
+.selection1 {
+    color: #e6b65cef;
+    font-size: 18px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-left: 30px;
+    margin-top: 35px;
+}
+
+section hr {
+    border: 0.1px solid #2F405F;
+    width: 740px;
+    margin: 0 auto;
+}
+
+.name1,
+.name2,
+.email1,
+.number1,
+.date1,
+.Schoolname1,
+.gpa1,
+.year1,
+.selection111 {
+    color: white;
+    opacity: 0.6;
+    font-family: 'Outfit', sans-serif;
+    font-size: 13px;
+    font-weight: 100;
+}
+
+.name1 {
+    position: relative;
+    left: 30px;
+    top: 27px;
+}
+
+.name2 {
+    position: relative;
+    left: 350px;
+    top: 27px;
+}
+
+.name11,
+.name22,
+.email11,
+.r11,
+.date11,
+.Schoolname11,
+.gpa11,
+.year11,
+.selection11 {
+    background-color: #26344A;
+    border-radius: 8px;
+    border: 1px solid #2F3E55;
+    height: 40px;
+    width: 360px;
+
+}
+
+.name11 {
+    position: relative;
+    left: 30px;
+    top: 40px;
+}
+
+.name22 {
+    position: relative;
+    left: 46px;
+    top: 40px;
+}
+
+input:focus {
+    border: solid 0.1px #ffd900ac;
+    outline: none;
+    box-shadow: 0 0 2px 0.2px #FFD700;
+}
+
+.email1 {
+    position: relative;
+    left: 30px;
+    top: 60px;
+}
+
+.number1 {
+    position: relative;
+    left: 330px;
+    top: 60px;
+}
+
+.email11 {
+    position: relative;
+    top: 70px;
+    left: 30px;
+}
+
+.r11 {
+    position: relative;
+    left: 46px;
+    top: 70px;
+}
+
+.date1 {
+    position: relative;
+    top: 90px;
+    left: 30px;
+}
+
+.date11 {
+    position: relative;
+    top: 100px;
+    left: 30px;
+    width: 750px;
+    height: 42px;
+    color: white;
+    font-weight: bold;
+}
+
+@keyframes main1 {
+    0% {
+        opacity: 0;
+        position: relative;
+        top: 20px;
+    }
+
+    100% {
+        opacity: 1;
+        position: relative;
+        top: 0;
+    }
+}
+
+.History {
+    position: relative;
+    left: 3px;
+    top: 100px;
+}
+
+.hr {
+    position: relative;
+    top: 100px;
+}
+
+.Schoolname1 {
+    position: relative;
+    left: 30px;
+    top: 105px;
+}
+
+.Schoolname11 {
+    position: relative;
+    left: 30px;
+    top: 120px;
+    width: 750px;
+}
+
+.gpa1 {
+    position: relative;
+    left: 30px;
+    top: 145px;
+}
+
+.gpa11 {
+    position: relative;
+    left: 30px;
+    top: 160px;
+}
+
+.year1 {
+    position: relative;
+    left: 420px;
+    top: 85px;
+}
+
+.year11 {
+    position: relative;
+    left: 420px;
+    top: 98px;
+    height: 42px;
+    color: white;
+}
+
+.selection1 {
+    position: relative;
+    top: 150px;
+}
+
+.hr1 {
+    position: relative;
+    top: 165px;
+}
+
+.selection11 {
+    position: relative;
+    left: 30px;
+    top: 180px;
+    width: 750px;
+    color: white;
+}
+
+.selection111 {
+    position: relative;
+    left: 30px;
+    top: 170px;
+}
+
+.submit {
+    border: solid 1px #e6b65cef;
+    width: 750px;
+    height: 40px;
+    border-radius: 20px;
+    text-align: center;
+    background-color: #e6b65cef;
+    position: relative;
+    left: 30px;
+    top: 230px;
+    transition: 0.3s linear;
+}
+
+.submit:hover {
+    box-shadow: 0 0 10px 0.5px #e6b65cef;
+    position: relative;
+    top: 227px;
+}
+
+.ff {
+    height: 30px;
+}
