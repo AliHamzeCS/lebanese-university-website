@@ -2,7 +2,7 @@
 
 A modern university website interface designed using HTML5 and CSS3 featuring a landing page and admission application form.
 
-![Home Page Screenshot](images/home.png)
+![Home Page Screenshot](home.png)
 
 ## 📌 Overview
 
@@ -13,7 +13,7 @@ It provides an attractive homepage and an online application form interface for 
 
 ### Home Page
 
-![Application Form](images/apply.png)
+![Application Form](apply.png)
 
 - Modern navigation bar
 - Hero section introducing the university
