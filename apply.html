@@ -10,21 +10,21 @@
 
 <body>
     <header>
-        <img src="images/logo.png" alt="logo" width="60px" height="50px">
+        <img src="logo.png" alt="logo" width="60" height="50">
         <h2 class="name">Lebanese University</h2>
         <a href="HTML2.html" class="main">Home</a>
         <a href="#University" class="main">About</a>
-        <a href="" class="applay">Applay</a>
+        <a href="#" class="applay">Applay</a>
     </header>
     <div>
         <p class="main">Start Your Journey</p>
         <p class="main1">Complete the application form below to apply for the upcoming academic year</p>
     </div>
-    <form>
+    <form action="#" method="post">
         <section>
             <p class="Information">Personal Information</p>
             <hr>
-            <label class="name1" id="name1">First Name</label>
+            <label class="name1" for="name">First Name</label>
             <label class="name2" for="name2">Last Name</label>
             <br>
             <input class="name11" type="text" id="name" placeholder="ali" required>
@@ -34,7 +34,7 @@
             <label class="number1" for="r">Phone Number</label>
             <br>
             <input class="email11" type="email" id="email" placeholder="ali.doe@example.com" required>
-            <input class="r11" type="text" id="r" placeholder="+961 77 777 777" required>
+            <input class="r11" type="tel" id="r" placeholder="+961 77 777 777" required>
             <br>
             <label class="date1" for="date">Date of Birth</label>
             <br>
@@ -43,7 +43,7 @@
             <p class="History">Academic History</p>
             <hr class="hr">
             <br>
-            <label class="Schoolname1" for="Schoolname">High School Name</label>
+            <label class="Schoolname1" for="Schoolname">High School name</label>
             <br>
             <input class="Schoolname11" type="text" id="Schoolname" placeholder="Enter your high school Name">
             <br>
@@ -60,7 +60,7 @@
                 </optgroup>
             </select>
             <br>
-            <label class="selection1">Program Selection</label>
+            <label class="selection1" for="selection">Program Selection</label>
             <br>
             <hr class="hr1">
             <br>
