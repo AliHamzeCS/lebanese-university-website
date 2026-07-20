@@ -24,7 +24,7 @@ header {
     opacity: 0.989;
 }
 
-.name {
+.university-name {
     color: #E6B65C;
     text-shadow: 0 2px 8px rgba(230, 182, 92, 0.25);
     font-weight: 700;
@@ -32,7 +32,7 @@ header {
 }
 
 header img,
-header .name {
+header .university-name {
     position: relative;
     left: -600px;
     top: -4px;
@@ -52,7 +52,7 @@ header .apply {
     transition: 0.2s linear;
 }
 
-header .main {
+header .nav-link {
     position: relative;
     margin-right: 17px;
     margin-left: 17px;
@@ -72,7 +72,7 @@ header .main {
 
 
 
-.main::after {
+.nav-link::after {
     content: "";
     position: absolute;
     width: 0;
@@ -83,11 +83,11 @@ header .main {
     transition: width 0.3s ease-in-out;
 }
 
-.main:hover::after {
+.nav-link:hover::after {
     width: 100%;
 }
 
-.page1 .p1 {
+.hero .hero-title {
     color: white;
     font-weight: 550;
     font-size: 75px;
@@ -96,7 +96,7 @@ header .main {
     opacity: 0.8;
 }
 
-.page1 .p2 {
+.hero .hero-description {
     color: white;
     font-family: 'Outfit', sans-serif;
     opacity: 0.7;
@@ -106,7 +106,7 @@ header .main {
     font-size: 19px;
 }
 
-.page1 .explore {
+.hero .explore-button {
     font-family: 'Outfit', sans-serif;
     border: solid 2px #E6B65C;
     border-radius: 28px;
@@ -122,13 +122,13 @@ header .main {
     top: -228px;
 }
 
-.explore:hover {
+.explore-button:hover{
     border: solid 2px white;
     box-shadow: 1px 1px 10px 25px rgba(128, 128, 128, 0.185) inset;
     color: white;
 }
 
-.page1 .app {
+.hero .apply-button {
     border: solid 2px rgb(224, 188, 78);
     border-radius: 28px;
     background-color: rgb(224, 188, 78);
@@ -144,13 +144,13 @@ header .main {
     transition: 0.2s linear;
 }
 
-.app:hover {
+.apply-button:hover {
     position: relative;
     top: -178px;
     box-shadow: 1px 2px 10px 2px rgb(224, 188, 78);
 }
 
-.page1 {
+.hero {
     color: white;
     height: 670px;
     white-space: pre-line;
@@ -159,11 +159,11 @@ header .main {
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
-    animation-name: p1;
+    animation-name: hero-animation;
     animation-duration: 2s;
 }
 
-@keyframes p1 {
+@keyframes hero-animation {
     0% {
         opacity: 0;
         position: relative;
@@ -182,18 +182,18 @@ section {
     height: 620px;
 }
 
-section .ww {
+section .section-title {
     color: #e6b65cdc;
     font-weight: 550;
     font-size: 38px;
     text-align: center;
     position: relative;
     top: 120px;
-    animation-name: ww;
+    animation-name: section-title-animation;
     animation-duration: 2s;
 }
 
-section .www {
+section .section-subtitle {
     color: white;
     font-family: 'Outfit', sans-serif;
     text-align: center;
@@ -201,11 +201,11 @@ section .www {
     font-size: 14.5px;
     position: relative;
     top: 105px;
-    animation-name: www;
+    animation-name: section-subtitle-animation;
     animation-duration: 2s;
 }
 
-section .parent {
+section .cards-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -216,9 +216,7 @@ section .parent {
     animation-duration: 2s;
 }
 
-.first,
-.second,
-.third {
+.feature-card {
     border: solid 1px #020B1A;
     width: 360px;
     height: 240px;
@@ -230,26 +228,18 @@ section .parent {
     transition: 0.1s linear;
 }
 
-.third:hover {
+.feature-card:hover {
     border: solid 1px #e6b65cdc;
 }
 
-.second:hover {
-    border: solid 1px #e6b65cdc;
-}
-
-.first:hover {
-    border: solid 1px #e6b65cdc;
-}
-
-.ali {
+.card-title {
     font-weight: 600;
     position: relative;
     left: 30px;
     top: 28px;
 }
 
-.hadi {
+.card-description {
     font-family: 'Outfit', sans-serif;
     font-weight: 500;
     font-size: medium;
@@ -261,7 +251,7 @@ section .parent {
     left: 32px;
 }
 
-svg {
+.feature-card svg {
     position: relative;
     left: 30px;
     top: 40px;
@@ -281,7 +271,7 @@ svg {
     }
 }
 
-@keyframes ww {
+@keyframes section-title-animation {
     0% {
         opacity: 0;
         position: relative;
@@ -295,7 +285,7 @@ svg {
     }
 }
 
-@keyframes www {
+@keyframes section-subtitle-animation {
     0% {
         opacity: 0;
         position: relative;
@@ -319,25 +309,22 @@ footer {
     justify-content: space-evenly;
 }
 
-.footer1 {
+.footer-title {
     color: #e6b65cdc;
     font-weight: bold;
     font-size: 25px;
 }
 
-.footer11 {
+.footer-description {
     color: white;
     white-space: pre-line;
 }
 
-.footer2 {
+.footer-heading {
     color: white;
 }
 
-.pp1,
-.pp2,
-.pp3,
-.pp4 {
+.footer-link {
     color: white;
     opacity: 0.7;
     white-space: pre-line;
@@ -345,11 +332,11 @@ footer {
     transition: 0.1s linear;
 }
 
-.footer3 {
+.contact-title {
     color: white;
 }
 
-.footer33 {
+.contact-info {
     color: white;
     opacity: 0.7;
     white-space: pre-line;
@@ -357,39 +344,27 @@ footer {
     transition: 0.3s linear;
 }
 
-.pp1:hover {
+.footer-link:hover {
     color: #e6b65cdc;
 }
 
-.pp2:hover {
+.contact-info:hover {
     color: #e6b65cdc;
 }
 
-.pp3:hover {
-    color: #e6b65cdc;
-}
-
-.pp4:hover {
-    color: #e6b65cdc;
-}
-
-.footer33:hover {
-    color: #e6b65cdc;
-}
-
-.footer {
+.footer-column {
     position: relative;
     top: 50px;
     left: -20px;
 }
 
-.c {
+.copyright {
     background-color: #020A1A;
     height: 60px;
     display: flex;
 }
 
-.c p {
+.copyright p {
     color: white;
     margin: 0 auto;
     position: relative;
