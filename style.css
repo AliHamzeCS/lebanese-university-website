@@ -31,14 +31,14 @@ header {
     font-family: 'Outfit', sans-serif;
 }
 
-header .name,
-img {
+header img,
+header .name {
     position: relative;
     left: -600px;
     top: -4px;
 }
 
-header .applay {
+header .apply {
     font-family: 'Outfit', sans-serif;
     border: solid 2px #E6B65C;
     border-radius: 20px;
@@ -65,7 +65,7 @@ header .main {
 
 }
 
-.applay:hover {
+.apply:hover {
     border: solid 2px white;
     box-shadow: 1px 1px 10px 20px rgba(128, 128, 128, 0.185) inset;
 }
