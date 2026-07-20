@@ -9,71 +9,74 @@
 </head>
 
 <body>
+   
     <header>
         <img src="logo.png" alt="logo" width="60" height="50">
-        <h2 class="name">Lebanese University</h2>
-        <a href="HTML2.html" class="main">Home</a>
-        <a href="#University" class="main">About</a>
-        <a href="#" class="applay">Applay</a>
+        <h2 class="university-name">Lebanese University</h2>
+        <a href="HTML2.html" class="nav-link">Home</a>
+        <a href="#University" class="nav-link">About</a>
+        <a href="" class="apply-link">Apply</a>
     </header>
     <div>
-        <p class="main">Start Your Journey</p>
-        <p class="main1">Complete the application form below to apply for the upcoming academic year</p>
+        <p class="hero-title">Start Your Journey</p>
+        <p class="hero-description">Complete the application form below to apply for the upcoming academic year</p>
     </div>
+    
     <form action="#" method="post">
-        <section>
+        
+        <section class="form-section">
             <p class="Information">Personal Information</p>
             <hr>
-            <label class="name1" for="name">First Name</label>
-            <label class="name2" for="name2">Last Name</label>
+            <label class="first-name-label" for="name">First Name</label>
+            <label class="last-name-label" for="name2">Last Name</label>
             <br>
-            <input class="name11" type="text" id="name" placeholder="ali" required>
-            <input class="name22" type="text" id="name2" placeholder="hamze" required>
+            <input class="first-name-input" type="text" id="name" placeholder="ali" required>
+            <input class="last-name-input" type="text" id="name2" placeholder="hamze" required>
             <br>
-            <label class="email1" for="email">Email Address</label>
-            <label class="number1" for="r">Phone Number</label>
+            <label class="email-label" for="email">Email Address</label>
+            <label class="phone-label" for="r">Phone Number</label>
             <br>
-            <input class="email11" type="email" id="email" placeholder="ali.doe@example.com" required>
-            <input class="r11" type="tel" id="r" placeholder="+961 77 777 777" required>
+            <input class="email-input" type="email" id="email" placeholder="ali.doe@example.com" required>
+            <input class="phone-input" type="tel" id="r" placeholder="+961 77 777 777" required>
             <br>
-            <label class="date1" for="date">Date of Birth</label>
+            <label class="date-label" for="date">Date of Birth</label>
             <br>
-            <input class="date11" type="date" id="date" required>
+            <input class="date-input" type="date" id="date" required>
             <br>
-            <p class="History">Academic History</p>
+            <p class="academic-title">Academic History</p>
             <hr class="hr">
             <br>
-            <label class="Schoolname1" for="Schoolname">High School name</label>
+            <label class="school-label" for="Schoolname">High School name</label>
             <br>
-            <input class="Schoolname11" type="text" id="Schoolname" placeholder="Enter your high school Name">
+            <input class="school-input" type="text" id="Schoolname" placeholder="Enter your high school Name">
             <br>
-            <label class="gpa1" for="gpa">High School GPA / Percentage</label>
+            <label class="gpa-label" for="gpa">High School GPA / Percentage</label>
             <br>
-            <input class="gpa11" type="text" id="gpa" placeholder="e.g.3.8 or 95%">
+            <input class="gpa-input" type="text" id="gpa" placeholder="e.g.3.8 or 95%">
             <br>
-            <label class="year1" for="year">Graduation Year</label>
+            <label class="year-label" for="year">Graduation Year</label>
             <br>
-            <select class="year11" id="year">
+            <select class="year-select" id="year">
                 <optgroup name="year" label="select year">
                     <option value="2026">2026</option>
                     <option value="2027">2027</option>
                 </optgroup>
             </select>
             <br>
-            <label class="selection1" for="selection">Program Selection</label>
+            <label class="program-title" for="selection">Program Selection</label>
             <br>
             <hr class="hr1">
             <br>
-            <label class="selection111" for="selection">Desired Academic Program</label>
+            <label class="program-label" for="selection">Desired Academic Program</label>
             <br>
-            <select class="selection11" name="selection" id="selection">
+            <select class="program-select" name="selection" id="selection">
                 <optgroup label="select a program">
                     <option value="">s</option>
                     <option value="">s</option>
                 </optgroup>
             </select>
             <br>
-            <input type="submit" class="submit">
+            <input type="submit" class="submit-button">
         </section>
         <p class="ff"></p>
     </form>
